@@ -1,0 +1,492 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.rsp {
+  width: 100%;
+}
+
+/* css for index navigation */
+.featuredindex {
+  height: 75vh;
+  background: url(img/home01.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#indexnav {
+  text-align: center;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Salsa', cursive;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  font-family: 'Salsa', cursive;
+}
+
+.navlogo {
+  max-height: 40px;
+}
+
+.logolink {
+  background: transparent !important;
+  transform: translate(0, 15px);
+}
+
+.chameleonLogo {
+  float: right;
+  border-width: solid 3px;
+  border-color: #000000;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #f9f9f9;
+  background: #7c9e51;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50px;
+}
+
+a:hover {
+  color: #7c9e51;
+  background: #f9f9f9;
+}
+
+.ctr {
+  text-align: center;
+}
+
+/* css for text */
+h1 {
+  font-family: 'Lemon', serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Salsa', cursive;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+.indent {
+  text-indent: 2em;
+  hyphens: manual;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+  line-height: 2em;
+}
+
+.noindent {
+  hyphens: manual;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+}
+
+/* css for footer */
+footer {
+  padding-top: 10px;
+  height: 200px;
+  background: #7c9e51;
+  text-align: center;
+}
+
+#footer {
+  margin: 10px;
+  color: #ffffff;
+  font-size: 1.0em;
+}
+
+.ftlogo {
+  max-height: 20px;
+}
+
+/* css for 1st page */
+.map {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+/* css for 2nd page */
+.featuredanimal {
+  background-size: cover;
+  text-align: center;
+}
+
+/* css for video banner */
+.section {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* css for accordion */
+button {
+  font-family: 'Salsa', cursive;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10 px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #7c9e51;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  color: #777;
+  float: right;
+  margin-left: 1vh;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+/* css for slideshow */
+.mySlides {
+  display: none
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+/* css for 3rd page */
+.featuredjungle {
+  height: 76vh;
+  background: url(img/jungle01.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.chameleonL {
+  float: left;
+}
+
+.chameleonR {
+  float: right;
+}
+
+
+/* css for 4th page */
+
+.featureditem {
+  height: 76vh;
+  background: url(img/item01.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.itemImg {
+  float: left;
+  padding: 1em;
+}
+
+.itemButton {
+  margin: 1rem;
+  float: right;
+  border-radius: 50px;
+  border-color: #7c9e51;
+  padding: 5px 10px;
+}
+
+.card {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 1em;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  border-color: #7c9e51;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 500px;
+  height: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #7c9e51;
+  border-color: #7c9e51;
+}
+
+.cardindent {
+  text-indent: 1em;
+}
+
+.camItem {
+  float: right;
+  margin: 50px;
+}
+
+/* css for 5th page */
+.featuredtreasure {
+  height: 77vh;
+  background: url(img/treasure01.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.gifbg {
+  height: 20vh;
+  background: url(img/confetti1.gif) center center no-repeat;
+  background-size: cover;
+  z-index: 10;
+  position: relative;
+}
+
+.treasurebox {
+  max-height: 200px;
+  float: right;
+  margin-left: 20px;
+}
+
+.intro {
+  display: block;
+  margin: auto 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  margin: 0 20%;
+}
+
+.cell {
+  min-height: 60px;
+}
+
+/* default - small devices */
+
+[class*="col"] {
+  grid-column-end: span 12;
+}
+
+/* below 600px typically tablet*/
+
+@media only screen and (max-width: 600px) {
+  .sm1 {
+    grid-column-end: span 12;
+  }
+
+  .sm2 {
+    grid-column-end: span 6;
+  }
+
+  .sm3 {
+    grid-column-end: span 4;
+  }
+
+  .sm4 {
+    grid-column-end: span 3;
+  }
+
+  .sm6 {
+    grid-column-end: span 2;
+  }
+
+  .sm12 {
+    grid-column-end: span 1;
+  }
+}
+
+/* above 601px typically tablet*/
+
+@media only screen and (min-width: 601px) {
+  .md1 {
+    grid-column-end: span 12;
+  }
+
+  .md2 {
+    grid-column-end: span 6;
+  }
+
+  .md3 {
+    grid-column-end: span 4;
+  }
+
+  .md4 {
+    grid-column-end: span 3;
+  }
+
+  .md6 {
+    grid-column-end: span 2;
+  }
+
+  .md12 {
+    grid-column-end: span 1;
+  }
+}
+
+/* above 1025px typically desktop*/
+
+@media only screen and (min-width: 1025px) {
+  .col1 {
+    grid-column-end: span 12;
+  }
+
+  .col2 {
+    grid-column-end: span 6;
+  }
+
+  .col3 {
+    grid-column-end: span 4;
+  }
+
+  .col4 {
+    grid-column-end: span 3;
+  }
+
+  .col6 {
+    grid-column-end: span 2;
+  }
+
+  .col12 {
+    grid-column-end: span 1;
+  }
+}
